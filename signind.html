@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Patient Report System</title>
+	
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="plugins/cubeportfolio/css/cubeportfolio.min.css">
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/owl.carousel.css" rel="stylesheet" media="screen" />
+    <link href="css/owl.theme.css" rel="stylesheet" media="screen" />
+	<link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+
+	<!-- boxed bg -->
+	<link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
+	<!-- template skin -->
+	<link id="t-colors" href="color/default.css" rel="stylesheet">
+
+    <style>  
+
+        input[type=text], input[type=password], textarea {  
+          width: 50%;  
+          padding: 10px;  
+          margin: 5px 0 22px 0;  
+          display: inline-block;  
+          border: none;  
+          background: #f1f1f1;  
+        }  
+        input[type=text]:focus, input[type=password]:focus {  
+          background-color: #5bc0de;  
+          outline: none;  
+        }  
+         div {  
+                    padding: 5px 0;  
+             }  
+        hr {  
+          border: 1px solid #f1f1f1;  
+          margin-bottom: 25px;  
+        }  
+        .registerbtn {  
+          background-color: #5bc0de;  
+          color: white;  
+          padding: 16px 20px;  
+          margin: 8px 0;  
+          border: none;  
+          cursor: pointer;  
+          width: 50%;  
+          opacity: 0.9;  
+        }  
+        .registerbtn:hover {  
+          opacity: 1;  
+        }  
+        </style>
+</head>  
+<body>
+<form>        
+    <div class="container">  
+    <center>  <h1> Student Registeration Form</h1> </center>  
+    <hr> 
+
+    <label> Name: </label>   
+  <input type="text" id="cont" name="Name" placeholder= "Name" required /> 
+  <div>  
+    <label> <br>  
+    Email id :  
+    </label> 
+    <input type="text" id="cont1" name="email id" placeholder="Enter email" required/> 
+  </div>        
+  <div>  
+  <label> 
+    <div>  
+        <label>   
+        Contact Number :  
+        </label> 
+        <input type="text" id="cont2" name="country code" placeholder="Country Code"  value="+91"/> 
+    </div> 
+    <div>
+        <label>Qualification: </label>
+        <select id="cont3">
+            <option value="M.B.B.S.">M.B.B.S.</option>
+            <option value="B.B.S.">B.B.S.</option>
+        </select><br> 
+    </div> 
+    <label>
+  Gender :  
+  </label><br> 
+  <select id="cont6">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+  </select><br> 
+  </div>
+  <label>Medic Type: </label><select id="cont4" onclick="remove1()">
+    <option value="Skin">Skin</option>
+    <option value="Fever">Fever</option>
+</select>
+<button type="submit" onclick="type1()" class="registration">Click</button>
+<div id='f1'></div> 
+<label>Language:</label> <select id="cont7">
+    <option value="Male">Marathi</option>
+    <option value="Female">Hindi</option>
+    <option value="Other">English</option>
+</select><br>
+<label>Hospital Name: </label>
+<input id="cont8" placeholder="Hospital Name"></input><br>
+  
+Password: <input id="cont5" placeholder="Password"></input><br>
+   
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required> <br>
+      <label for="psw-repeat"><b>Re-type Password</b></label>  
+      <input type="password" id="cont5" placeholder="Retype Password" name="psw-repeat" required> <br>
+      <button type="submit" class="registration"onclick="send()">Register</button>
+  </form>    
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+    <div id="wrapper">
+        
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <div class="container navigation">	
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="signinp.html">
+                        <img src="images/logo.png" alt="" width="150" height="40" />
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                    <li class="active"><a href="#intro">Home</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#doctor">Doctors</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#pricing">Payment</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+</div>
+<script src="js/signind.js"></script>
+</body>
+</html>
