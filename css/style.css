@@ -501,3 +501,17 @@ blockquote strong {
 	color: #fff;
 }
 
+/*===========section boxes=============*/
+.select-disease {
+	text-align:center;
+  	padding-right: 30px;
+  	padding-bottom: 50px;
+  	padding-left: 80px;
+	font-weight: 900;
+}
+
+.hov :hover { color: #39CCCC; } 
+
+/*===========report types checkbox============*/
+
+

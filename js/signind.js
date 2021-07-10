@@ -1,4 +1,4 @@
-    var url="http://localhost:5000/todo/api/v1.0/mail";
+var url="http://localhost:5000/todo/api/v1.0/mail"
     var ins=0;
     var dis=['Skin','Fever'];
     var typ=[['a','b'],['c','d','e']];
