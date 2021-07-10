@@ -513,6 +513,7 @@ blockquote strong {
 .hov :hover { color: #39CCCC; } 
 .but {
 	text-align: center;
+	font-size: larger;
   }
 
 /*===========report types checkbox============*/
