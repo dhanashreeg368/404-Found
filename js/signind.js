@@ -1,4 +1,4 @@
-var url="http://localhost:5000/todo/api/v1.0/mail"
+var url="http://localhost:5000/todo/api/v1.0/doctor";
     var ins=0;
     var dis=['Skin','Fever'];
     var typ=[["Blood element analysis","Vitamin Profile","Thyroid Profile","Vitamin D","Vitamin B12","fCBC Test","TSH"],['c','d','e']];
@@ -19,6 +19,7 @@ var url="http://localhost:5000/todo/api/v1.0/mail"
             d=document.getElementById("cont7");
             data.language=d.options[d.selectedIndex].value;
             data.hosp = document.getElementById("cont8").value;
+            data.loc=document.getElementById("cont9").value;
             data.password = document.getElementById("cont5").value;
             data.insert=0;
             for(var i=0;i<typ[count].length;i++)

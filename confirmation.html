@@ -112,19 +112,23 @@
         </nav>
         <div class="confirm"><br><br><br><br><br><br><br><br> Confirmation Page</div>
         <div class="ele">
-          <label for="Patient id: ">Patient Name: </label><br>
-          <label for="Doctor id: ">Doctor Name: </label><br>
-          <label for="Medical: ">Medical Category: </label><br>
-          <label for="Input type: ">Report type: </label><br>
+          <label for="Patient id: ">Patient Name: </label><text id="pid"></text><br>
+          <label for="Doctor id: ">Doctor Name: </label><text id="did"></text><br>
+          <label for="Medical: ">Medical Category: </label><text id="mid"></text><br>
+          <label for="Input type: ">Report type: </label><text id="rid"></text>
         </div>
         <div class="file1"><p>Click on the "Choose File" button to upload the report: </p>
           <form>
             <input type="file" id="FILE" name="filename">
         </form><br></div>    
-      <div class="but1"><button>Confirm</button>
+      <div class="but1" id="buut" onclick="sendimg()"><button>Confirm</button>
         <br><br>
-        <button>Chat with Doctor</button>
+        <button onclick="window.location.href='C:/Users/Aditya/404-Found/chat.html';">Chat with Doctor</button>
       </div>
+      Updloaded Report:<br>
+      <div id="myImages"></div>
+      <script src="js/conf.js"></script>  
+ 
 </head>
 <body>
 </body>

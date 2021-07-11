@@ -1,4 +1,4 @@
-var url="http://localhost:5000/todo/api/v1.0/mail"
+var url="http://localhost:5000/todo/api/v1.0/login"
     var val = 0,valp=0,choice="";
     function send()
     {   
@@ -27,6 +27,14 @@ var url="http://localhost:5000/todo/api/v1.0/mail"
             }
             else
             {
+                if(choice=='patient')
+                {
+                localStorage.setItem("patient", document.getElementById("cont1").value);
+                }
+                else if(choice=='doctor')
+                {
+                    localStorage.setItem("doctor", document.getElementById("cont1").value);
+                }
                 alert("Correct Login");
             }
 	        if (xhr.readyState == 4 && xhr.status == "201") {
