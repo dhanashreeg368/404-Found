@@ -26,6 +26,20 @@
 	<!-- template skin -->
 	<link id="t-colors" href="color/default.css" rel="stylesheet">
     <style>
+      .confirm, .ele, .form, .file1, .but1 {
+        text-align: center;
+      }
+      form {
+    width: 200px;
+    margin: 0 auto;
+}
+        body {
+          background-image: url('img/photo/bg5.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+          background-position: center;  
+        }
         .dropbtn {
           background-color: #39CCCC;
           color: white;
@@ -96,6 +110,21 @@
             </div>
             <!-- /.container -->
         </nav>
+        <div class="confirm"><br><br><br><br><br><br><br><br> Confirmation Page</div>
+        <div class="ele">
+          <label for="Patient id: ">Patient Name: </label><br>
+          <label for="Doctor id: ">Doctor Name: </label><br>
+          <label for="Medical: ">Medical Category: </label><br>
+          <label for="Input type: ">Report type: </label><br>
+        </div>
+        <div class="file1"><p>Click on the "Choose File" button to upload the report: </p>
+          <form>
+            <input type="file" id="FILE" name="filename">
+        </form><br></div>    
+      <div class="but1"><button>Confirm</button>
+        <br><br>
+        <button>Chat with Doctor</button>
+      </div>
 </head>
 <body>
 </body>
