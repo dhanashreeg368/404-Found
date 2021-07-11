@@ -14,6 +14,12 @@ same is a daunting task.
 Diagnosis of multiple report types or a single report for multiple medical
 disciplines at one stop.
 
+Used pymongo as driver for mongoDB
+Python code for individual operations are added to python folder
+All python Api's are routed via login_approute.py
+Javascripts are added to js folder
+While .htm pages are avialable is repository
  Active github page link -  
  https://dhanashreeg368.github.io/404-Found/
+
 
