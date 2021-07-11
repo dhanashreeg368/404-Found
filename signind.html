@@ -70,7 +70,7 @@
 <body>
 <form>        
     <div class="container">  
-    <center>  <h1> Student Registeration Form</h1> </center>  
+    <center>  <h1> Registration Form</h1> </center>  
     <hr> 
 
     <label> Name: </label>   
@@ -96,36 +96,40 @@
             <option value="B.B.S.">B.B.S.</option>
         </select><br> 
     </div> 
-    <label>
-  Gender :  
-  </label><br> 
-  <select id="cont6">
-    <option value="Male">Male</option>
-    <option value="Female">Female</option>
-    <option value="Other">Other</option>
-  </select><br> 
-  </div>
-  <label>Medic Type: </label><select id="cont4" onclick="remove1()">
-    <option value="Skin">Skin</option>
-    <option value="Fever">Fever</option>
-</select>
-<button type="submit" onclick="type1()" class="registration">Click</button>
-<div id='f1'></div> 
-<label>Language:</label> <select id="cont7">
+      <div>
+        <label>>Medic Type: </label>
+          <select id="cont4" onclick="remove1()">
+          <option value="Skin">Skin</option>
+          <option value="Fever">Fever</option>
+      </select>
+      </div>
+      <div>
+        <label>Gender: </label>
+        <select id="cont6">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+      </select><br>
+      </div>
+<button type="submit" onclick="type1()" class="registration">Select the reports that you diagnose</button>
+<div id='f1'>
+
+</div> 
+<label>Language:</label> 
+<select id="cont7">
     <option value="Male">Marathi</option>
     <option value="Female">Hindi</option>
     <option value="Other">English</option>
 </select><br>
+<label>Location: </label>
+<input id="cont9" placeholder="Location"></input><br>
 <label>Hospital Name: </label>
 <input id="cont8" placeholder="Hospital Name"></input><br>
-  
-Password: <input id="cont5" placeholder="Password"></input><br>
-   
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required> <br>
+<label>Password: </label>
+<input id="cont5" placeholder="Password"></input><br>
       <label for="psw-repeat"><b>Re-type Password</b></label>  
       <input type="password" id="cont5" placeholder="Retype Password" name="psw-repeat" required> <br>
-      <button type="submit" class="registration"onclick="send()">Register</button>
+      <button class="registration" onclick="send()" onclick="remove1()">Register</button>
   </form>    
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">

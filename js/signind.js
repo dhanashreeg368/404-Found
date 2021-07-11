@@ -1,7 +1,7 @@
 var url="http://localhost:5000/todo/api/v1.0/mail"
     var ins=0;
     var dis=['Skin','Fever'];
-    var typ=[['a','b'],['c','d','e']];
+    var typ=[["Blood element analysis","Vitamin Profile","Thyroid Profile","Vitamin D","Vitamin B12","fCBC Test","TSH"],['c','d','e']];
     var typ1=[];
     var count=0;
     function send()

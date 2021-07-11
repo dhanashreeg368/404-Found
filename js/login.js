@@ -1,10 +1,11 @@
 var url="http://localhost:5000/todo/api/v1.0/mail"
-var val = 0,valp=0;
-function send()
+    var val = 0,valp=0,choice="";
+    function send()
     {   
             var data = {};
             data.mailid= document.getElementById("cont1").value;
             data.password = document.getElementById("cont2").value;
+            data.choi=choice;
             data.valid=0;
             data.validp=0;
             var json = JSON.stringify(data);
@@ -36,4 +37,14 @@ function send()
             }
 
         xhr.send(json);
+    }
+    function Patient()
+    {
+        choice="patient";
+        send();
+    }
+    function Doctor()
+    {
+        choice="doctor";
+        send();
     }
